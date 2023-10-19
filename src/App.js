@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Vari from './componentes/Appform';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> Roxana Puma.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ROXANA
-        </a>
-      </header>
+    <div 
+      style ={{background:"yellow",
+      width:"350px", 
+      padding:"10px"}}>
+        <Vari/>
+        <i class="large material-icons">insert_chart</i>
+        
+ 
     </div>
   );
 }
