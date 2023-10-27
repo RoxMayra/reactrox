@@ -51,7 +51,7 @@ const manejarCambiosEntrada = (e) => {
 }
 
  return (
-    <div style={{background:"orange",padding:"10px",textAlign:"center",}}>
+    <div style={{background:"#93bd9a",padding:"10px",textAlign:"center",}}>
       <h>AppForm.js </h> <br/>
       <form onSubmit={manejarEnvio} >
         <input onChange = {manejarCambiosEntrada} value={objeto.nombre}name='nombre' type='text' placeholder='Nombres...'/><br/><br/>

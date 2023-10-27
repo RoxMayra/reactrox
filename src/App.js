@@ -26,6 +26,7 @@ function App() {
   }
 
   fnRead(); 
+  ////console.log(docBD);
 
     /////////// DELETE -Eliminar-fnDelete/////
     const [idActual, setIdActual]= useState("");
@@ -34,7 +35,7 @@ function App() {
     
    
     return (
-      <div style={{width:"350px",background:"greenyellow", padding:"10px"}}>
+      <div style={{width:"350px",background:"#7c917f", padding:"10px"}}>
       <AppForm {...{idActual, setIdActual, fnRead}} />
       {docBD.map((p) => 
          <p key={p.id}>
