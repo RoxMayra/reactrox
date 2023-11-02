@@ -76,16 +76,18 @@ const AppForm = (props) => {
   return (
     <div style={{background:"#B4A5D6", padding:"10px", textAlign:"center"}}>
       <form onSubmit={manejarEnvios} >
-        <h>AppForm.js</h> <br/>
+        <h4>FORMULARIO</h4> <br/>
         <input onChange={manejarCambiosEntrada} value={objeto.nombre} 
           name='nombre' type='text' placeholder='Nombres...' /><br/>
+          
 
         <input onChange={manejarCambiosEntrada} value={objeto.edad} 
           name='edad'   type='text' placeholder='Edad...' /><br/>
+          
 
         <input onChange={manejarCambiosEntrada} value={objeto.genero} 
           name='genero' type='text' placeholder='Género...' /><br/>
-
+        <br/>
         <button>
           { props.idActual===""? "Guardar": "Actualizar" }
         </button>
