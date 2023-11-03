@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/reactrox/static/css/main.3b5045f0.css",
-    "main.js": "/reactrox/static/js/main.de46a1cd.js",
+    "main.js": "/reactrox/static/js/main.7b4227b1.js",
     "static/js/787.cc4e593a.chunk.js": "/reactrox/static/js/787.cc4e593a.chunk.js",
     "static/media/logo.svg": "/reactrox/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactrox/index.html",
     "main.3b5045f0.css.map": "/reactrox/static/css/main.3b5045f0.css.map",
-    "main.de46a1cd.js.map": "/reactrox/static/js/main.de46a1cd.js.map",
+    "main.7b4227b1.js.map": "/reactrox/static/js/main.7b4227b1.js.map",
     "787.cc4e593a.chunk.js.map": "/reactrox/static/js/787.cc4e593a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b5045f0.css",
-    "static/js/main.de46a1cd.js"
+    "static/js/main.7b4227b1.js"
   ]
 }
