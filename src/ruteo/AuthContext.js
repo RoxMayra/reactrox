@@ -1,6 +1,6 @@
-// AuthContext.js
+// (1) AuthContext.js
 
-// (1) Importando las bibliotecas necesarias
+// (2) Importando las bibliotecas necesarias
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
@@ -8,10 +8,10 @@ import { auth, db } from '../conexion/firebase';
 import { doc, getDoc} from "firebase/firestore";
 
 
-// (2) Creando un contexto
+// (3) Creando un contexto
 const AuthContext = createContext();
 
-// (3) Creando un componente proveedor
+// (4) Creando un componente proveedor
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   useEffect(() => {
@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
   
-  // (4) Def. funciones: iniciar, cerrar, registrar usuarios, etc.
+  // (5) Def. funciones: iniciar, cerrar, registrar usuarios, etc.
   const signIn = async (email, password) => {     //Iniciar sesión
     try {
       await signInWithEmailAndPassword(auth, email, password);
