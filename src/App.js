@@ -5,23 +5,18 @@ import { useEffect, useState } from 'react';
 import Dashboard from './public/Dashboard';
 import Home from './public/Home';
 import PublicRutas from './ruteo/PublicRutas';
-
+import { useAuth, user } from "./ruteo/AuthContext"
+import ProtectedRutas from './ruteo/ProtectedRutas';
 
 function App() {
-
-  
-    return (
-      <div style={{background:"plum"}}>
+  const { user } = useAuth();
+  return(
+    <div style={{background:"plum"}}>
       <Router>
-        <Routes>
-          <PublicRutas/>
-
-        </Routes>
-
+        {user ? <ProtectedRutas /> : <PublicRutas/>}
       </Router>
-      </div>
-    );
-  }
-  
-  
+    </div>
+  );
+}
+
   export default App;
