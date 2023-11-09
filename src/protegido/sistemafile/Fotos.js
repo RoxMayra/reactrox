@@ -5,6 +5,8 @@ const Fotos = () => {
     <div id='file'>
       <h1>Fotos</h1>
       Página para fotos...
+      <img src="imagen1.jpg"/>
+     
     </div>
   )
 }

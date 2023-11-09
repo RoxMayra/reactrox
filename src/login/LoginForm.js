@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
   
-  // (7). Usando el contexto
+  ////////////// (7). Usando el contexto
   const { signIn } = useAuth();               
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
